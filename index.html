@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://miro.medium.com/v2/resize:fit:1400/0*8MyegGN7980UQXkN);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-width: 320px;
+        }
+
+        .logo {
+            width: 120px;
+            cursor: pointer;
+            opacity: 0.5;
+
+        }
+
+        .navbar {
+            width: 100%;
+            margin: 0 4px;
+            display: flex;
+            /* padding: 35px 0px; */
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 0px 30px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            align-items: center;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0%;
+            position: absolute;
+            background: #009688;
+            bottom: -10px;
+            left: 0;
+            transition: 0.5s;
+
+
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+
+        /* .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: #fff;
+
+        } */
+
+
+
+
+        .content {
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* span{
+            background-color: #009688;
+        } */
+
+        .content h1 {
+            /* font-size: 70px; */
+            font-size: 6vw;
+            margin-top: 80px;
+        }
+
+        .content p {
+            font-size: 1.5vw;
+            font-weight: 100;
+            line-height: 25px;
+
+
+
+        }
+
+        button {
+            width: 200px;
+            padding: 15px 0px;
+            text-align: center;
+            margin: 20px 10px;
+            font-weight: bold;
+            border-radius: 25px;
+            background: transparent;
+            border: 2px solid #009688;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        span {
+            background: #009688;
+            height: 100%;
+            width: 0%;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+
+
+        }
+
+        button:hover span {
+            width: 100%;
+
+        }
+
+        button:hover {
+            border: none;
+
+        }
+
+        ul i {
+            font-size: 1.5vw;
+            color: white;
+        }
+
+        ul i {
+            display: none;
+
+        }
+
+        @media (max-width: 800px) {
+            .banner {
+                width: 100%;
+            }
+
+            .navbar {
+                height: 40px;
+                justify-content: space-between;
+            }
+
+            .navbar ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+            }
+
+            .navbar ul li {
+                margin: 0 10px;
+            }
+
+            .navbar ul i {
+                display: block;
+                font-size: 9vw;
+                cursor: pointer;
+            }
+
+            .navbar ul li a {
+                display: none;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #fff;
+                align-items: center;
+            }
+
+            .navbar ul i:hover+a,
+            .navbar ul i:focus+a {
+                display: block;
+            }
+
+            .navbar ul li:hover::after {
+                width: 0%;
+            }
+        }
+
+
+
+        @media (max-width:800px) {
+            .content h1 {
+                font-size: 6vw;
+
+            }
+
+            .content p{
+                margin-top: 10px;
+                font-size: 2vw;
+            }
+
+            .content.buttons{
+                flex-wrap: wrap;
+            }
+        }
+
+        b{
+            Color: #009688;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_700,h_400/https://assets.designhill.com/design-blog/wp-content/uploads/2018/05/Interior-logo-design.jpg"
+                alt="logo" class="logo">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">visit</a></li>
+                <li><a href="#">meeting</a></li>
+                <li><a href="#">about</a></li>
+                <li><i class="ri-menu-line"></i></li>
+            </ul>
+
+        </div>
+
+
+
+        <div class="content">
+            <h1><b>DESIGN</b> YO<b>U</b>R HO<b>U</b>SE</h1>
+             <P>Iam Abdullah Nawaz and i Belong to ZIarat Kaka <br>Sahib District Nowshera and studying in comsats <br> university abbottabad </P>
+           
+        <div class="buttons">
+            <button type="button"> <span></span>WATCH MORE</button>
+            <button type="button"> <span></span>SUBSCRIBE</button>
+        </div>
+            
+       
+        </div>
+
+    </div>
+</body>
+
+</html>
